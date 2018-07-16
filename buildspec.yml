@@ -3,7 +3,8 @@ version: 0.2
 phases:
   build:
     commands:
-      -mvn clean install
+      - apt install mysql-server
+      - mvn clean install
       - mvn test
   post_build:
     commands:
