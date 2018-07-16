@@ -5,7 +5,7 @@ phases:
     commands:
       - apt-get update
       - apt-get -y install mysql-server
-      - mvn clean install
+      - mvn install
       - mvn test
   post_build:
     commands:
