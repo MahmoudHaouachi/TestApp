@@ -1,0 +1,13 @@
+version: 0.0
+os: linux
+files:
+  - source: ./gs-rest-service-cors-0.1.0.jar
+    destination: /home
+hooks:
+  BeforeInstall:
+    - location: ./install_dependencies
+      timeout: 300
+  ApplicationStart:
+    - location: ./start_application
+      timeout: 300
+      

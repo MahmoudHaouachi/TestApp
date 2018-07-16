@@ -1,0 +1,5 @@
+com/testapp/test/repo/CustomerRepository.class
+com/testapp/test/model/Customer.class
+com/testapp/test/TestApplication.class
+com/testapp/test/RestConfig.class
+com/testapp/test/controller/CustomerController.class
