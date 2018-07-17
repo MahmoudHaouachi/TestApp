@@ -1,9 +1,9 @@
 #!/bin/bash
 
-apt-get update
-apt-get install default-jre
-apt-get install default-jdk
-apt-get install maven
+yum update
+yum install default-jre
+yum install default-jdk
+yum install maven
 
 
 
