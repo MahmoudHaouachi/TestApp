@@ -1,7 +1,7 @@
 version: 0.0
 os: linux
 files:
-  - source: ./gs-rest-service-cors-0.1.0.jar
-    destination: /home
+  - source: /
+    destination:  /opt/codedeploy-agent/deployment-root/a194c91b-b94c-40cf-9f09-e4e719919db9/d-5JDGB91VR/deployment-archive/
 
       
