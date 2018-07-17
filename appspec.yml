@@ -3,6 +3,5 @@ os: linux
 files:
   - source: ./gs-rest-service-cors-0.1.0.jar
     destination: /home
-hooks:
-  ...
+
       
