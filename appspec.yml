@@ -2,7 +2,7 @@ version: 0.0
 os: linux
 files:
   - source: /
-    destination: /home
+    destination: /home/App
 hooks:
   AfterInstall:
     - location: scripts/dependencies.sh
