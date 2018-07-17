@@ -7,9 +7,4 @@ apt-get install maven
 
 
 
-#!/bin/bash
-# description: Tomcat7 Start Stop Restart
-# processname: tomcat7
 
-
-# Change permission mode for the service script
