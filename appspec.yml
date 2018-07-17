@@ -1,11 +1,11 @@
 version: 0.0
 os: linux
 files:
-  - source: TestApp/
+  - source: /
     destination: /home
 hooks:
   BeforeInstall:
-    - location: scripts/install_dependencies.sh
+    - location: scripts/dependencies.sh
       timeout: 300
       runas: root
   
