@@ -2,10 +2,10 @@ version: 0.0
 os: linux
 files:
   - source: /
-    destination: /home/App
+    destination: /home
 hooks:
   AfterInstall:
-    - location: ./install_dependencies
+    - location: scripts/dependencies.sh
       timeout: 300
       runas: root
   
