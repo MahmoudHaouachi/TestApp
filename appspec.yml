@@ -5,7 +5,7 @@ files:
     destination: /home
 hooks:
   BeforeInstall:
-    - location: scripts/install_dependencies
+    - location: ./install_dependencies
       timeout: 300
       runas: root
   ApplicationStart:
