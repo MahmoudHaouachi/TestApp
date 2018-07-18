@@ -4,7 +4,7 @@ files:
   - source: /
     destination: /home
 hooks:
-  AfterInstall:
+  BeforeInstall:
     - location: ./dependencies.sh
       timeout: 300
       runas: root
