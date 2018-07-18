@@ -3,7 +3,7 @@ os: linux
 files:
   - source: /
     destination: /home
-  - source: /testui
+  - source: testui
     destination: /home/front
 hooks:
   BeforeInstall:
