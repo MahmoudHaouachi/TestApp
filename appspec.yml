@@ -3,8 +3,6 @@ os: linux
 files:
   - source: /
     destination: /home
-  - source: testui/
-    destination: /home/front
 hooks:
   BeforeInstall:
     - location: ./dependencies.sh
