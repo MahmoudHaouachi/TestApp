@@ -26,19 +26,25 @@ ng build --prod
 
 #configure nginx
 
+cd /etc/nginx/conf.d/ 
+touch angular.conf
 echo "server {
-    listen 80 default_server;
-    listen [::]:80 default_server;
- 
-    root /home/test-ui/dist;
-    index index.html index.htm index.nginx-debian.html;
- 
-    server_name _;
- 
-    location / {
-        try_files $uri $uri/ /index.html =404;
-    }
-} " >> /etc/nginx/sites-available/default
+        listen       80 default_server;
+        listen       [::]:80 default_server;
+        server_name  localhost;
+        #root         /home/test-ui/dist;
 
+        location / {
+         root /home/test-ui/dist;
+         index index.html index.htm;
+         try_files $uri $uri/ /index.html;
+}
+
+        # redirect server error pages to the static page /40x.html
+        #
+        error_page 404 /404.html;
+            location = /40x.html {
+        }
+}" >> angular.conf
 #restart nginx
 service nginx restart
