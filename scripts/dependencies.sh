@@ -1,4 +1,5 @@
 #!/bin/bash
+
 sudo su
 #update
 yum update
@@ -45,3 +46,8 @@ echo 'Your Maven Installation is Complete.'
 curl -sL https://rpm.nodesource.com/setup | bash -
 
 yum install -y nodejs
+
+#nginx
+sudo yum install epel-release
+sudo yum install nginx
+sudo systemctl start nginx
