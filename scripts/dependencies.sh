@@ -1,7 +1,11 @@
 #!/bin/bash
 
 sudo su
+#kill apps
+kill -9 $(lsof -t -i:8080)
+
 #update
+
 yum update
 
 # Script to Install JAVA 8 (JDK 8u40) on CentOS/RHEL 7/6/5 and Fedora
