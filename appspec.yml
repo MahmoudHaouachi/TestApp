@@ -8,7 +8,7 @@ hooks:
     - location: ./dependencies.sh
       timeout: 300
       runas: root
-    AfterInstall:
+  AfterInstall:
     - location: ./setup.sh
       timeout: 300
       runas: root
