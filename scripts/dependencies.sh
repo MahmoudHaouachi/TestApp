@@ -42,4 +42,6 @@ rm -r "$TEMPORARY_DIRECTORY"
 echo 'Your Maven Installation is Complete.'
 
 #node
-yum install nodejs
+curl -sL https://rpm.nodesource.com/setup | bash -
+
+yum install -y nodejs
