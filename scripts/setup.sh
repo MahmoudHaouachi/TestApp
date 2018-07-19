@@ -7,7 +7,11 @@ sudo su
 
 #run back end 
 cd /home/
-java -jar test-0.0.1-SNAPSHOT.jar
+if [ -f node.pid ] 
+	then
+		kill -9 ` cat node.pid `
+fi
+java -jar test-0.0.1-SNAPSHOT.jar> /dev/null 2> /dev/null < /dev/null & echo $! > node.pid
 
 #unzip front
 unzip test-ui.zip
