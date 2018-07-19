@@ -3,6 +3,7 @@
 sudo su
 #kill apps
 kill -9 $(lsof -t -i:8080)
+kill -9 $(lsof -t -i:4200)
 
 #update
 
