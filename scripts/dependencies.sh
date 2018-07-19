@@ -41,3 +41,5 @@ echo 'Removing the temporary directory...'
 rm -r "$TEMPORARY_DIRECTORY"
 echo 'Your Maven Installation is Complete.'
 
+#node
+yum install nodejs
