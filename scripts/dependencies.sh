@@ -49,5 +49,5 @@ yum install -y nodejs
 
 #nginx
 sudo yum install epel-release
-sudo yum install nginx
-sudo systemctl start nginx
+sudo yum install -y nginx
+sudo service nginx start
