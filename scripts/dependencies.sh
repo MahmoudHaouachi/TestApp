@@ -9,6 +9,7 @@ kill -9 $(lsof -t -i:4200)
 
 yum update
 
+
 # Script to Install JAVA 8 (JDK 8u40) on CentOS/RHEL 7/6/5 and Fedora
 echo "Installing Java 8 (64bit)"
 

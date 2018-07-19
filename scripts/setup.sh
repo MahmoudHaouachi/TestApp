@@ -20,6 +20,10 @@ unzip test-ui.zip
 cd /home/test-ui/
 npm install
 
+npm install npm@latest -g
+
+npm install -g @angular/cli
+
 #set angular app in prod mode
 cd /home/test-ui
 ng build --prod
