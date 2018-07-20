@@ -17,7 +17,9 @@ java -jar test-0.0.1-SNAPSHOT.jar> /dev/null 2> /dev/null < /dev/null & echo $! 
 unzip test-ui.zip
 
 #install node packages
+
 exit
+sudo chmod -R 777 /home/test-ui/
 cd /home/test-ui/
 
 npm install -g @angular/cli
