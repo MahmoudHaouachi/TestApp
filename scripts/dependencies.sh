@@ -49,10 +49,15 @@ rm -r "$TEMPORARY_DIRECTORY"
 echo 'Your Maven Installation is Complete.'
 
 #node
-curl -sL https://rpm.nodesource.com/setup | bash -
+curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.8/install.sh | bash
 
-yum install -y nodejs
+. ~/.nvm/nvm.sh
 
+nvm install 8.11.2
+
+nvm install --lts
+
+node -e "console.log('Running Node.js ' + process.version)"
 #nginx
 sudo yum install epel-release
 sudo yum install -y nginx
