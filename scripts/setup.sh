@@ -17,6 +17,7 @@ java -jar test-0.0.1-SNAPSHOT.jar> /dev/null 2> /dev/null < /dev/null & echo $! 
 unzip test-ui.zip
 
 #install node packages
+exit
 cd /home/test-ui/
 
 npm install -g @angular/cli
@@ -27,8 +28,13 @@ npm install -g
 cd /home/test-ui
 ng build --prod
 
-#configure nginx
+#nginx
+sudo yum install epel-release
+sudo yum install -y nginx
+sudo service nginx start
 
+#configure nginx
+sudo su 
 cd /etc/nginx/conf.d/ 
 touch angular.conf
 echo "server {
@@ -50,4 +56,5 @@ echo "server {
         }
 }" >> angular.conf
 #restart nginx
+
 service nginx restart

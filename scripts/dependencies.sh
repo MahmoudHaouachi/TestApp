@@ -58,7 +58,3 @@ nvm install 8.11.2
 nvm install --lts
 
 node -e "console.log('Running Node.js ' + process.version)"
-#nginx
-sudo yum install epel-release
-sudo yum install -y nginx
-sudo service nginx start
