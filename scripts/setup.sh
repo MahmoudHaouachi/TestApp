@@ -14,7 +14,7 @@ fi
 java -jar test-0.0.1-SNAPSHOT.jar> /dev/null 2> /dev/null < /dev/null & echo $! > node.pid
 
 #unzip front
-unzip test-ui.zip
+unzip -o test-ui.zip 
 
 #install node packages
 
