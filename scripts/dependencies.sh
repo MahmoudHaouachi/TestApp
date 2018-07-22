@@ -61,7 +61,7 @@ node -e "console.log('Running Node.js ' + process.version)"
 
 #install node packages
 
-exit
+
 sudo chmod -R 777 /home/test-ui/
 cd /home/test-ui/
 
