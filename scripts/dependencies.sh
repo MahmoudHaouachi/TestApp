@@ -57,3 +57,20 @@ nvm install 8.11.2
 nvm install --lts
 
 node -e "console.log('Running Node.js ' + process.version)"
+
+
+#install node packages
+
+exit
+sudo chmod -R 777 /home/test-ui/
+cd /home/test-ui/
+
+npm install -g @angular/cli
+
+npm install -g
+
+#nginx
+
+sudo yum install epel-release
+sudo yum install -y nginx
+sudo service nginx start
