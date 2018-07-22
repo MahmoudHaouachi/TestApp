@@ -31,6 +31,7 @@ cd /home/test-ui
 ng build --prod
 
 #nginx
+
 sudo yum install epel-release
 sudo yum install -y nginx
 sudo service nginx start
@@ -40,15 +41,13 @@ sudo su
 cd /etc/nginx/conf.d/ 
 touch angular.conf
 echo "server {
-        listen       80 default_server;
-        listen       [::]:80 default_server;
+        listen       80 ;
         server_name  localhost;
-        #root         /home/test-ui/dist;
 
         location / {
-         root /home/test-ui/dist;
+         root /home/test-ui/dist/test-ui;
          index index.html index.htm;
-         try_files $uri $uri/ /index.html;
+         
 }
 
         # redirect server error pages to the static page /40x.html
@@ -58,5 +57,4 @@ echo "server {
         }
 }" >> angular.conf
 #restart nginx
-
 service nginx restart
