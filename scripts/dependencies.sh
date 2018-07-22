@@ -49,7 +49,7 @@ echo 'Your Maven Installation is Complete.'
 
 #node
 curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.8/install.sh | bash
-
+exit
 . ~/.nvm/nvm.sh
 
 nvm install 8.11.2
