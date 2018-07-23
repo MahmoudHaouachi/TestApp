@@ -14,24 +14,7 @@ sudo unzip -o test-ui.zip
 sudo rm -rf test-ui.zip
 
 #configure nginx
-sudo su 
-cd /etc/nginx/conf.d/ 
-touch angular.conf
-echo "server {
-        listen       80 ;
-        server_name  localhost;
-
-        location / {
-         root /home/test-ui/dist/test-ui;
-         index index.html index.htm;
-         
-}
-
-        # redirect server error pages to the static page /40x.html
-        #
-        error_page 404 /404.html;
-            location = /40x.html {
-        }
-}" >> angular.conf
+sudo rm -rf /etc/nginx/nginx.conf
+sudo mv /home/test-ui/nginx.conf /etc/nginx/
 #restart nginx
 service nginx restart
