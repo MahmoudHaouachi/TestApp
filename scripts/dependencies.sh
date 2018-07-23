@@ -1,6 +1,6 @@
 #!/bin/bash
 
-sudo su
+
 
 
 
@@ -12,9 +12,9 @@ yum update
 # Script to Install JAVA 8 (JDK 8u40) on CentOS/RHEL 7/6/5 and Fedora
 echo "Installing Java 8 (64bit)"
 
-yum install -y java-1.8.0-openjdk
+sudo yum install -y java-1.8.0-openjdk
 
-yum remove -y java-1.7.0-openjdk
+sudo yum remove -y java-1.7.0-openjdk
 
 
 # maven
@@ -23,17 +23,17 @@ DOWNLOAD_TO="$TEMPORARY_DIRECTORY/maven.tgz"
 
 echo 'Downloading Maven to: ' "$DOWNLOAD_TO"
 
-wget -O "$DOWNLOAD_TO" http://apache.mirrors.lucidnetworks.net/maven/maven-3/3.5.3/binaries/apache-maven-3.5.3-bin.tar.gz
+sudo wget -O "$DOWNLOAD_TO" http://apache.mirrors.lucidnetworks.net/maven/maven-3/3.5.3/binaries/apache-maven-3.5.3-bin.tar.gz
 
 echo 'Extracting Maven'
-tar xzf $DOWNLOAD_TO -C $TEMPORARY_DIRECTORY
-rm $DOWNLOAD_TO
+sudo tar xzf $DOWNLOAD_TO -C $TEMPORARY_DIRECTORY
+sudo rm $DOWNLOAD_TO
 
 echo 'Configuring Envrionment'
 
-mv $TEMPORARY_DIRECTORY/apache-maven-* /usr/local/maven
+sudo mv $TEMPORARY_DIRECTORY/apache-maven-* /usr/local/maven
 echo -e 'export M2_HOME=/usr/local/maven\nexport PATH=${M2_HOME}/bin:${PATH}' > /etc/profile.d/maven.sh
-source /etc/profile.d/maven.sh
+sudo source /etc/profile.d/maven.sh
 
 #not sure about how to set the current environment under the sudo
 #sudo -u "$SUDO_USER" env  "M2_HOME=/usr/local/maven"
@@ -43,7 +43,7 @@ source /etc/profile.d/maven.sh
 echo 'The maven version: ' `mvn -version` ' has been installed.'
 echo -e '\n\n!! Note you must relogin to get mvn in your path !!'
 echo 'Removing the temporary directory...'
-rm -r "$TEMPORARY_DIRECTORY"
+sudo rm -r "$TEMPORARY_DIRECTORY"
 echo 'Your Maven Installation is Complete.'
 
 #node
