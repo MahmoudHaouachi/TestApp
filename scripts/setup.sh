@@ -5,9 +5,9 @@
 cd /home/
 if [ -f node.pid ] 
 	then
-		sudo kill -9 ` cat node.pid `
+		kill -9 ` cat node.pid `
 fi
-sudo java -jar test-0.0.1-SNAPSHOT.jar> /dev/null 2> /dev/null < /dev/null & echo $! > node.pid
+java -jar test-0.0.1-SNAPSHOT.jar> /dev/null 2> /dev/null < /dev/null & echo $! > node.pid
 
 #unzip front
 sudo unzip -o test-ui.zip 
