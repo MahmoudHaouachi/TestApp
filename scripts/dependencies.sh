@@ -59,15 +59,13 @@ nvm install --lts
 node -e "console.log('Running Node.js ' + process.version)"
 
 
-#install node packages
+#install angular
 
 
-sudo chmod -R 777 /home/test-ui/
-cd /home/test-ui/
 
 npm install -g @angular/cli
 
-npm install -g
+
 
 #nginx
 

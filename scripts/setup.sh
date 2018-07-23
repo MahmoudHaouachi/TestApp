@@ -16,7 +16,12 @@ java -jar test-0.0.1-SNAPSHOT.jar> /dev/null 2> /dev/null < /dev/null & echo $! 
 #unzip front
 unzip -o test-ui.zip 
 
+#
+sudo chmod -R 777 /home/test-ui/
 
+cd /home/test-ui/
+
+npm install -g
 
 
 
