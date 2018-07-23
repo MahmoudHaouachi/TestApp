@@ -1,7 +1,7 @@
 #!/bin/bash
 
 sudo su
-#kill apps
+
 
 
 #update
@@ -56,12 +56,9 @@ nvm install 8.11.2
 
 nvm install --lts
 
-node -e "console.log('Running Node.js ' + process.version)"
 
 
 #install angular
-
-
 
 npm install -g @angular/cli
 
