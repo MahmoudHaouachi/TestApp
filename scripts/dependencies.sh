@@ -58,7 +58,7 @@ nvm install --lts
 #install angular
 
 
-npm install -g @angular/cli
+
 
 
 #nginx
