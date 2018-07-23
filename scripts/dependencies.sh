@@ -56,8 +56,9 @@ nvm install 8.11.2
 nvm install --lts
 
 #install mysql
-sudo yum remove mysql-server
-
+sudo yum install -y mysql-server
+#intall angular
+npm install -g @angular/cli
 
 #nginx
 

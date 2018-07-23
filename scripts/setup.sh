@@ -1,14 +1,6 @@
 #!/bin/bash
 
 
-
-exit
-
-npm install -g @angular/cli
-
-
-
-
 #run back end 
 cd /home/
 if [ -f node.pid ] 
@@ -24,7 +16,6 @@ sudo unzip -o test-ui.zip
 sudo chmod -R 777 /home/test-ui/
 
 cd /home/test-ui/
-
 
 
 npm install -g 
