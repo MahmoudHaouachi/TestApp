@@ -17,7 +17,6 @@ yum install -y java-1.8.0-openjdk
 yum remove -y java-1.7.0-openjdk
 
 
-
 # maven
 TEMPORARY_DIRECTORY="$(mktemp -d)"
 DOWNLOAD_TO="$TEMPORARY_DIRECTORY/maven.tgz"
@@ -48,21 +47,16 @@ rm -r "$TEMPORARY_DIRECTORY"
 echo 'Your Maven Installation is Complete.'
 
 #node
-curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.8/install.sh | bash
-exit
+sudo curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.8/install.sh | bash
+
 . ~/.nvm/nvm.sh
 
 nvm install 8.11.2
 
 nvm install --lts
 
-
-
 #install angular
-
 npm install -g @angular/cli
-
-
 
 #nginx
 

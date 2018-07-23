@@ -7,7 +7,7 @@ hooks:
   BeforeInstall:
     - location: ./dependencies.sh
       timeout: 300
-      mode: 777
+      
   AfterInstall:
     - location: ./setup.sh
       timeout: 300
