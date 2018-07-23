@@ -57,13 +57,10 @@ nvm install --lts
 
 #install angular
 
-sudo chmod -R 777 /home/test-ui/
-
-cd /home/test-ui/
 
 npm install -g @angular/cli
 
-npm install -g
+
 #nginx
 
 sudo yum install epel-release
