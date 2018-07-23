@@ -57,9 +57,6 @@ nvm install --lts
 
 #install mysql
 sudo yum install -y mysql-server
-#intall angular
-npm install -g @angular/cli
-npm link @angular/cli
 
 #nginx
 

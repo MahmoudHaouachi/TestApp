@@ -11,25 +11,7 @@ sudo java -jar test-0.0.1-SNAPSHOT.jar> /dev/null 2> /dev/null < /dev/null & ech
 
 #unzip front
 sudo unzip -o test-ui.zip 
-
-#
-sudo chmod -R 777 /home/test-ui/
-
-cd /home/test-ui/
-
-
-npm install -g 
-
-
-
-
-
-#set angular app in prod mode
-cd /home/test-ui
-
-ng build --prod
-
-
+sudo rm -rf test-ui.zip
 
 #configure nginx
 sudo su 
