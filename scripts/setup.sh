@@ -1,5 +1,9 @@
 #!/bin/bash
 
+
+
+exit
+
 npm install -g @angular/cli
 
 
