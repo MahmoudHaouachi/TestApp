@@ -1,7 +1,7 @@
 #!/bin/bash
 
+npm install -g @angular/cli
 
-#root
 
 
 
@@ -21,7 +21,7 @@ sudo chmod -R 777 /home/test-ui/
 
 cd /home/test-ui/
 
-npm install -g @angular/cli
+
 
 npm install -g 
 
