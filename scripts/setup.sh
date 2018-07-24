@@ -17,4 +17,4 @@ sudo rm -rf test-ui.zip
 sudo rm -rf /etc/nginx/nginx.conf
 sudo mv /home/test-ui/nginx.conf /etc/nginx/
 #restart nginx
-service nginx restart
+sudo service nginx restart
