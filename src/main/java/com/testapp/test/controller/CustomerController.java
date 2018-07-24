@@ -12,7 +12,7 @@ import com.testapp.test.repo.CustomerRepository;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.bind.annotation.CrossOrigin;
 
-@CrossOrigin(origins = "http://localhost:8080")
+@CrossOrigin(origins = "http://0.0.0.0:8080")
 @RestController
 public class CustomerController {
 
