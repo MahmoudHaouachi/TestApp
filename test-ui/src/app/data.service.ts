@@ -9,7 +9,7 @@ import { Customer } from './customer';
 })
 export class DataService {
 
-  private customersUrl = '172.31.46.255:8080/customer';  // URL to web API
+  private customersUrl = 'http://35.180.118.47/customer';  // URL to web API
   private headers = new Headers({'Content-Type': 'application/json'});
 
   constructor(private http: Http) {}
@@ -24,7 +24,7 @@ export class DataService {
   }
 
   getCustomersByLastName(lastName: string): Promise<Customer[]> {
-    const url = `http://172.31.46.255:8080/findbylastname/${lastName}`;
+    const url = `http://35.180.118.47/findbylastname/${lastName}`;
     return this.http.get(url)
       .toPromise()
       .then(response => response.json() as Customer)
@@ -33,7 +33,7 @@ export class DataService {
 
   create(customer: Customer): Promise<Customer> {
     return this.http
-      .post('http://172.31.46.255:8080/postcustomer', JSON.stringify(customer), {headers : this.headers})
+      .post('http://35.180.118.47/postcustomer', JSON.stringify(customer), {headers : this.headers})
       .toPromise()
       .then(res => res.json() as Customer)
       .catch(this.handleError);
