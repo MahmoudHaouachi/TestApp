@@ -9,7 +9,7 @@ phases:
       - mvn package
 artifacts:
   files:
-    - test-ui.zip
+    - nginx.conf
     - target/test-0.0.1-SNAPSHOT.jar
     - appspec.yml
     - scripts/*
