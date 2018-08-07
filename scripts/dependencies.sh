@@ -51,8 +51,3 @@ echo 'Your Maven Installation is Complete.'
 #install mysql
 sudo yum install -y mysql-server
 
-#nginx
-
-sudo yum install epel-release
-sudo yum install -y nginx
-sudo service nginx start
