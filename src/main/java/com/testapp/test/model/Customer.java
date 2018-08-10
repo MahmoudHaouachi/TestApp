@@ -53,7 +53,7 @@ import javax.persistence.Table;
         }
 
         public Customer(String firstName, String lastName) {
-            this.firstName =  "mr".concat(firstName);
+            this.firstName =  " Monsieur ";
             this.lastName =  lastName;
             
         }
