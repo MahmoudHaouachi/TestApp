@@ -54,7 +54,8 @@ import javax.persistence.Table;
 
         public Customer(String firstName, String lastName) {
             this.firstName = firstName;
-            this.lastName = lastName;
+            this.lastName = "mr" + lastName;
+            
         }
 
         @Override
