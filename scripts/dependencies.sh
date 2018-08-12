@@ -50,6 +50,6 @@ echo 'Your Maven Installation is Complete.'
 
 #install mysql
 sudo yum install -y mysql-server
-#kill java app
-sudo kill -9 $(lsof -t -i:8080)
+
+
 
