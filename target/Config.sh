@@ -21,4 +21,7 @@ sudo java -jar test-0.0.1-SNAPSHOT.jar> /dev/null 2> /dev/null < /dev/null & ech
 sudo rm -rf /etc/nginx/nginx.conf
 sudo mv /home/mahmoud/vstsagent/_work/r1/a/Drop/drop/nginx.conf /etc/nginx/
 
+#restart nginx
+sudo service nginx restart
+
 
