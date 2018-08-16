@@ -13,7 +13,7 @@ sudo apt-get install -y nginx
 cd /home/mahmoud/vstsagent/_work/r1/a/Drop/drop
 if [ -f node.pid ] 
 	then
-		sudo kill -9 ` cat node.pid `
+		sudo kill -9 ` sudo lsof -t -i:8080 `
 fi
 sudo java -jar test-0.0.1-SNAPSHOT.jar> /dev/null 2> /dev/null < /dev/null & echo $! > node.pid
 
