@@ -1,5 +1,6 @@
 #!/bin/bash
 
+#update
 sudo apt-get update
 
 #Java8
