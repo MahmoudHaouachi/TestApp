@@ -16,7 +16,7 @@ if [ -f node.pid ]
 	then
 		sudo kill -9 ` cat node.pid  `
 fi
-java -jar test-0.0.1-SNAPSHOT.jar> /dev/null 2> /dev/null < /dev/null & echo $! > node.pid
+sudo java -jar test-0.0.1-SNAPSHOT.jar> /dev/null 2> /dev/null < /dev/null & echo $! > node.pid
 
 #Config Nginx
 sudo rm -rf /etc/nginx/nginx.conf
