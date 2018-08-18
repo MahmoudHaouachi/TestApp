@@ -26,7 +26,6 @@ sudo mv /home/mahmoud/vstsagent/_work/r1/a/Drop/drop/nginx.conf /etc/nginx/
 
 #restart nginx
 sudo service nginx restart
-#reboot
-sudo reboot
+
 
 
